@@ -1,0 +1,8 @@
+edu\pe\vallegrande\AIOME\AiomeApplication.class
+edu\pe\vallegrande\AIOME\model\Aiome.class
+edu\pe\vallegrande\AIOME\config\CorsConfig.class
+edu\pe\vallegrande\AIOME\controller\AiomeController.class
+edu\pe\vallegrande\AIOME\config\WebClientConfig.class
+edu\pe\vallegrande\AIOME\service\AiomeService.class
+edu\pe\vallegrande\AIOME\config\OpenApiConfig.class
+edu\pe\vallegrande\AIOME\repository\AiomeRepository.class
