@@ -2,10 +2,7 @@ version: '3.8'
 
 services:
   backend:
-    build:
-      context: ./AEJ_03_be
-      dockerfile: Dockerfile
-    image: aej03-be:latest
+    image: djsanchezc06/aej03-be:latest
     environment:
       - SERVER_PORT=8080
     ports:
@@ -13,12 +10,9 @@ services:
     restart: always
 
   frontend:
-    build:
-      context: ./AEJ_03_fe
-      dockerfile: Dockerfile
-      args:
-        APIURL: "http://localhost:8080/api/aiome"
-    image: aej03-fe:latest
+    image: djsanchezc06/aej03-fe:latest
+    environment:
+      - VITE_APIURL=http://backend:8080
     ports:
       - "80:80"
     depends_on:
